@@ -236,6 +236,56 @@ img{
   z-index: 0;
  
 }
+@media screen and (max-width:940px){
+.grid{
+  
+  max-width: 740px;
+  padding: 0px 20px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-areas: "Daniel Daniel Patrick Patrick  "
+   " Janette Janette Jonathan Jonathan  "   
+  
+    " Kira Kira Kira Kira ";
+    grid-template-rows:  auto fill ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+grid-gap:10px;
+
+}
+img{
+
+  display: none;
+ 
+
+}
+}
+@media screen and (max-width:510px){
+  .grid{
+     margin: 30px;
+    max-width: 440px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+     "Daniel" 
+     "Patrick"
+     " Janette"
+     "Jonathan"   
+      " Kira";
+      grid-template-rows:  auto fill ;
+      grid-template-columns: 1fr;
+     
+  grid-gap:10px;
+  
+  }
+  img{
+  
+    display: none;
+
+}
+}
+
 @media screen and (max-width:375px){
   .grid{ 
    max-width: 325px;
@@ -250,8 +300,8 @@ img{
                           " Janette"   
                          " Patrick"
                            " Kira ";
-            grid-template-rows:  auto fill ;
-            grid-template-columns: repeat(auto-fit, minmax(200px,1fr )) ;
+  grid-template-rows:  auto fill ;
+grid-template-columns: repeat(auto-fit, minmax(200px,1fr )) ;
             
      grid-gap:30px;
   }
